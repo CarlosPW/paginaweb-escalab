@@ -6,6 +6,10 @@
     color: #707070;
 }
 
+.menu-responsive {
+    display: none;
+}
+
 #navbar {
     display: flex;
     justify-content: space-between;
@@ -235,8 +239,35 @@ footer {
 
 
 @media (max-width:1024px) {
+
+    /* MENU RESPONSIVO */
     .nav-links {
         display: none;
+        position: absolute;
+        margin: 0%;
+        top: 80px;
+        right: 0%;
+        width: 100%;     
+    }
+
+    .nav-links li {
+        width: 100%;
+        background-color: #F3F3F3;
+        border: none;
+        border-radius: 0%;
+        height: 90px;
+    }
+
+    .menu-responsive {
+        display: block;
+        position: absolute;
+        right: 8%;
+        font-size: 35px;
+        cursor: pointer;
+    }
+
+    .menu-responsivo-activo {
+        display: block;
     }
 
     #navbar {
