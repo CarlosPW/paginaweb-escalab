@@ -262,7 +262,7 @@ footer {
     .menu-responsive {
         display: block;
         position: absolute;
-        right: 8%;
+        right: 10%;
         font-size: 35px;
         cursor: pointer;
     }
