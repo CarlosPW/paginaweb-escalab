@@ -25,24 +25,24 @@
         </ul>
     </nav>
 
-    <section class="main">
-        <div class="pantalla-texto">
-            <span id="hola-texto">HOLA,</span>
-            <h3 class="texto1">Me llamo Carlos Peñaloza y soy Ingeniero en Sonido.</h3>
-            <p class="texto2">
-                Dentro de mis pasiones está la producción y composición musical tanto <br>
-                para artistas e imágenes, como también la mezcla y masterización de audio.
-                <br><br>
-                Te invito a conocer mi trabajo.
-            </p>
-            <div class="botones">
-                <button class="boton"><a href="trabajos.html">Mis Trabajos</a></button>
-                <button class="boton"><a href="contacto.html">Contáctame</a></button>
-            </div>
-        </div>
-        <div class="foto">
-            <img class="img-fotografia" src="IMG/28577047_1139893619485131_564113262493302784_o.jpg" alt="carlos peñaloza">
-        </div>
+    <section class="main-contacto">
+        <h2 class="subtitulo">Contáctame</h2>
+        <p class="texto2-contacto">Si te interesa consultarme algo, puedes hacerlo a través de mis redes, o a través de este formulario.</p>
+       
+        <form>
+
+            <label for="name">Nombre: </label>
+            <input type="text" name="name" placeholder="Ingresa tu nombre" required><br>
+            
+            <label for="email">Correo: </label>
+            <input type="email" name="email" placeholder="Ingresa tu email" required><br>
+            
+            <label for="tu-mensaje">Tu Mensaje: </label>
+            <textarea name="tu-mensaje" cols="30" rows="10" required></textarea>
+
+            <button type="submit" class="boton-formulario boton">Enviar</button>
+            
+        </form>
     </section>
 <footer>
     <div class="redes-sociales">

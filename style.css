@@ -10,6 +10,9 @@
     display: none;
 }
 
+a {
+    text-decoration: none;
+}
 
 #navbar {
     display: flex;
@@ -118,6 +121,7 @@
     cursor: pointer;
     transition: 0.3s;
     border-radius: 10px;
+    outline: none;
 }
 
 .boton:hover {
@@ -317,5 +321,109 @@ footer {
 
     .img-fotografia {
         margin-top: 100px;
+    }
+
+}
+
+
+
+/* PÁGINA CONTÁCTAME */
+
+.subtitulo {
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+.main-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto2-contacto {
+    font-weight: 350;
+    margin:20px 5px;
+    padding: 0;
+    text-align: center;
+    
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    width: 50%;
+}
+
+input {
+    margin: 5px 0;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-weight: 300;
+}
+
+textarea {
+    resize: none;
+    margin: 5px 0;
+    outline: none;
+    width: 100%;
+}
+
+.boton-formulario {
+    margin: 15px auto 50px auto;
+    width: 200px;
+    height: 40px;
+}
+
+@media (max-width:1023px) {
+    form {
+        width: 90%;
+    }
+}
+
+
+/* PÁGINA TRABAJOS */
+
+.main-trabajos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.youtube-videos {
+    display: flex;
+    margin-bottom: 150px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.soundcloud-cuadro {
+    margin: 25px 0 20px 0;
+}
+
+.youtube-cuadro {
+    margin: 20px 10px;
+}
+
+.texto2-trabajos {
+    margin: 30px 0 5px 0;
+    font-weight: 350;
+    padding: 0;
+    text-align: center;
+}
+
+@media (max-width:1023px) {
+    .soundcloud-cuadro {
+        width: 70%;
+    }
+
+    .youtube-cuadro {
+        width: 70%;
     }
 }
