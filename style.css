@@ -41,6 +41,11 @@ a {
     display: flex;
     margin-right: 47px;
     cursor: pointer;
+
+    -webkit-user-select: none;  /* Chrome / Safari */
+    -moz-user-select: none;     /* Firefox */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          
 }
 
 .nav-links li {
@@ -414,7 +419,7 @@ textarea {
 .texto2-trabajos {
     margin: 30px 0 5px 0;
     font-weight: 350;
-    padding: 0;
+    padding: 10px;
     text-align: center;
 }
 
