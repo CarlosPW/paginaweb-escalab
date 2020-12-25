@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded',()=>{
 
+    
     const body = document.querySelector("body");
-    body.style.opacity = 1;
-    body.style.transition = "1s";
+    body.classList.add("body-activo");
     
     
     const toggleMenu = document.querySelector('.menu-responsive');
