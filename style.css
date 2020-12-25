@@ -48,6 +48,13 @@ a {
     user-select: none;          
 }
 
+.nav-links:active {
+    -webkit-user-select: none;  /* Chrome / Safari */
+    -moz-user-select: none;     /* Firefox */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;    
+}
+
 .nav-links li {
     list-style: none;
     width: 164px;
