@@ -1,16 +1,19 @@
-document.addEventListener('DOMContentLoaded',()=>{
+document.addEventListener("DOMContentLoaded", () => {
+	const toggleMenu = document.querySelector(".menu-responsive");
+	const navLinks = document.querySelector(".nav-links");
 
-    
-    const body = document.querySelector("body");
-    body.classList.add("body-activo");
-    
-    
-    const toggleMenu = document.querySelector('.menu-responsive');
-    const navLinks = document.querySelector('.nav-links');
-    
-    toggleMenu.addEventListener("click", ()=> {
-        navLinks.classList.toggle("menu-responsivo-activo");
-    })
-     
+	toggleMenu.addEventListener("click", () => {
+		navLinks.classList.toggle("menu-responsivo-activo");
+	});
 
-})
+	// Boton volver al inicio
+	const volverInicio = document.querySelector(".volver-al-inicio");
+	const logo = document.querySelector("#logo");
+
+	logo.addEventListener("mouseover", () => {
+		volverInicio.classList.add("volverinicio-activo");
+	});
+	logo.addEventListener("mouseout", () => {
+		volverInicio.classList.remove("volverinicio-activo");
+	});
+});
